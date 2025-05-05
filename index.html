@@ -11,29 +11,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script>
-  // Elemente HTML
-  const programareButton = document.getElementById("programare-button");
-  const modal = document.getElementById("programare-modal");
-  const closeButton = document.querySelector(".close");
-
-  // Deschide modalul când se apasă butonul
-  programareButton.addEventListener("click", function() {
-    modal.style.display = "block";
-  });
-
-  // Închide modalul când se apasă X
-  closeButton.addEventListener("click", function() {
-    modal.style.display = "none";
-  });
-
-  // Închide modalul dacă se apasă în afara acestuia
-  window.addEventListener("click", function(event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-</script>
-
 <body>
   <header>
     <img src="logo-andralis.jpg" alt="Andralis Logo" class="logo">
