@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -10,7 +11,6 @@
 </head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-  <script>
 <body>
   <header>
     <img src="logo-andralis.jpg" alt="Andralis Logo" class="logo">
@@ -57,11 +57,36 @@
     <p>Ne găsești la salonul Andralis! Contactează-ne pentru programări:</p>
     <p><strong>Program:</strong> Luni – Sâmbătă: 9:00 – 19:00</p>
     <p><strong>Telefon:</strong> [Număr de completat]</p>
-<a href="programari.html" class="whatsapp-button">
-  Programează-te acum
-</a>
 
-  
+<!-- Butonul existent -->
+<a href="#" id="programare-button" class="whatsapp-button">Programează-te acum</a>
+
+<!-- Modalul pentru formularul de programare -->
+<div id="programare-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Programează-te la Salonul Andralis</h2>
+    <form action="/programare" method="POST">
+      <label for="nume">Numele tău:</label>
+      <input type="text" id="nume" name="nume" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="data">Alege data:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="ora">Alege ora:</label>
+      <input type="time" id="ora" name="ora" required>
+
+      <button type="submit">Programează-te</button>
+    </form>
+  </div>
+</div>
+
+
+  </section>
+
   <footer>
     <p>&copy; 2025 Andralis – Salon de gene și unghii</p>
   </footer>
