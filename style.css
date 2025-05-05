@@ -83,3 +83,14 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+.galerie-poze {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.galerie-poze img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
