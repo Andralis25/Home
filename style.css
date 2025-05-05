@@ -94,3 +94,40 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+/* Modalul - stiluri de bază */
+.modal {
+  display: none;  /* inițial este ascuns */
+  position: fixed;  /* poziționat fix pe ecran */
+  z-index: 1;  /* pentru a fi deasupra conținutului */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* fundal semi-transparent */
+  overflow: auto;  /* permite derularea dacă formularul este prea mare */
+}
+
+/* Conținutul modalului */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;  /* centrat pe pagină */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;  /* ajustează lățimea modalului */
+  max-width: 600px;  /* maximizare lățime */
+}
+
+/* Butonul de închidere */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
