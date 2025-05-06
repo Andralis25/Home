@@ -94,3 +94,19 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: white;
+    color: #bfa76f;
+    border: 2px solid #bfa76f;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #bfa76f;
+    color: white;
+}
