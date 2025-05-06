@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Programează-te acum - Andralis</title>
+    <link rel="stylesheet" href="style-programari.css">
+</head>
+<body>
+    <header>
+        <h1>Programează-te acum</h1>
+        <p>Alege serviciul dorit și completează formularul pentru a te programa</p>
+    </header>
+
+    <form id="appointment-form">
+        <label for="service">Serviciu:</label>
+        <select id="service" name="service" required>
+            <option value="">Alege serviciul</option>
+            <optgroup label="Gene">
+                <option value="1D">Gene 1D</option>
+                <option value="2D">Gene 2D</option>
+                <option value="3D">Gene 3D</option>
+                <option value="Cat Eye">Gene efect Cat Eye</option>
+            </optgroup>
+            <optgroup label="Unghii">
+                <option value="Manichiura Semipermanenta">Manichiura semipermanentă</option>
+                <option value="Intretinere">Întreținere gel</option>
+                <option value="Constructie Gel">Construcție gel</option>
+            </optgroup>
+        </select>
+
+        <label for="name">Nume complet:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date">Data programării:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Ora programării:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="notes">Alte detalii (opțional):</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+
+        <button type="submit">Programează-mă acum</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
