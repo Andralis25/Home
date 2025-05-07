@@ -1,1 +1,51 @@
-<conținut placeholder>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Programează-te - Andralis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Programează-te la Andralis</h1>
+
+  <form action="form-handler.php" method="POST">
+    <label for="serviciu">Serviciu:</label>
+    <select name="serviciu" id="serviciu" required>
+      <option value="">Alege un serviciu</option>
+      <optgroup label="Gene">
+        <option value="Gene 1D">Gene 1D</option>
+        <option value="Gene 2D">Gene 2D</option>
+        <option value="Gene 3D">Gene 3D</option>
+        <option value="Gene Cat Eye">Gene Cat Eye</option>
+      </optgroup>
+      <optgroup label="Unghii">
+        <option value="Manichiură Semipermanentă">Manichiură Semipermanentă</option>
+        <option value="Întreținere">Întreținere</option>
+        <option value="Construcție Gel">Construcție Gel</option>
+      </optgroup>
+    </select>
+
+    <label for="nume">Nume complet:</label>
+    <input type="text" name="nume" id="nume" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="telefon">Telefon:</label>
+    <input type="tel" name="telefon" id="telefon" required>
+
+    <label for="data">Data programării:</label>
+    <input type="date" name="data" id="data" required>
+
+    <label for="ora">Ora programării:</label>
+    <input type="time" name="ora" id="ora" required>
+
+    <label for="observatii">Observații:</label>
+    <textarea name="observatii" id="observatii"></textarea>
+
+    <button type="submit">Trimite programarea</button>
+  </form>
+
+  <a href="../index.html">Înapoi la pagina principală</a>
+</body>
+</html>
